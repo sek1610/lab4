@@ -166,12 +166,13 @@ public class Main {
 
     public static class t7 {
         public void inf() {
-            int[] array = {4, 5, 7, 7, 4};
+            int[] array = {4, 5, 7, 7, 3};
             int j = 0;
             System.out.println("array=" + Arrays.toString(array));
             for (int i = 0; i < array.length-1; i++) {
-                if (array[i]>array[i+1]) {
-                    j = 1;
+                if (array[i]<=array[i+1]) {
+                }else{
+                    j=j+1;
                 }
             }
             if (j==0) {
